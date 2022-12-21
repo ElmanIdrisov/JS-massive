@@ -1,75 +1,48 @@
- /* const arr = ['milk', 'egg', 'apple', 'oil','potato','banana','watermelon']; */
-/*  const arrOfNum = [10, 20, 30, 40, 50, 60, 70, 80]; */
+  const arr = ['milk', 'egg', 'apple', 'oil', 'potato', 'banana', 'watermelon']; 
+/* const arrOfNum = [1, 2, 3, 4, 5, 6, 7, 8];  */
+/* let x = 1;
+const y = ++x; */ 
 
-/* let selectedProduct = null;
-const searchProduct = 'banana'
+/* let selectedProduct = null;  
+let foundProduct = 'oil' */
 
-
-
-
-for (let index = 0; index < arr.length; index++) {
-    
+/* for (let index = 0; index < arr.length; index++) {
     const product = arr[index];
-    if(product === searchProduct){
+
+    
+
+   if (product === foundProduct) {
+    selectedProduct = product;
+    break;
+   }
+   console.log(product);
+} 
+
+console.log('selectedProduct :', selectedProduct); */
+
+
+/* arr.forEach(function(product) {
+    if(product === foundProduct ) {
         selectedProduct = product;
     }
-}
+}); */
 
-
-console.log('selectedProduct:', selectedProduct); */ 
-
-/* const changedArr = arrOfNum.map((number) => {
-    return number * 2;
+/* /* const changedArr = arrOfNum.map((number) =>{
+    return number * 2
 })
 
 console.log('arr', arr);
-console.log('changedArr', changedArr); */
+console.log('changedArr ', changedArr); */
 
-/* const foundProduct = arr.find((product) => {
-    console.log('product: ', product);
-    return product ===  'oil'
+
+/* const arr = ['']; */
+
+/* arr.push('product')
+
+console.log('arr', arr); */
+
+const foundProduct = arr.find((product) =>{
+    return product === 'oil'
 })
 
-console.log('foundProduct: ', foundProduct);
-
- */
-
-/* const arr = ['dog', 'cat', 'mouse', 'lion', 'tiger'];
-
-let findAnimal  
-
-for (let index = 0; index < arr.length; index++) {
-    const element = arr[index];
-    if (element === 'cat') {
-        findAnimal = element;
-    }
-}
-
-console.log('findAnimal: ', findAnimal); */
- 
-const arr = [
-    {
-        name: 'Denis',
-        hobbie: 'swimming'
-    },
-    {
-        name: 'Elman',
-        hobbie: 'drawing'
-    },
-    {
-        name: 'Ahmed',
-        hobbie: 'singing'
-    },
-    {
-        name: 'Adil',
-        hobbie: 'collecting'
-    },
-    {
-        name: 'Isa',
-        hobbie: 'swimming'
-    }
-
-]
-
-const filteredArray = arr.filter((element) => element.hobbie === 'swimming');
-console.log('filteredArray: ', filteredArray);
+console.log('foundProduct', foundProduct);
